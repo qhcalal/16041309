@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人介绍</title>
+    <link rel="stylesheet" type="text/css" href="new样式.css">
+    <link rel="stylesheet" type="text/css" media="all" href="960.css"> 
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
+  <body><div class="container_16">
+    <nav class="pos_fixed">
+      <ul>
+      <li><a href="http://www.16041309.com:88/%e9%a6%96%e9%a1%b5.html">首页</a></li>
+        <li><a href="#简单说明">个人信息</a></li>
+        <li><a href="#成长经历">成长经历</a></li>
+        <li><a href="#我喜欢的代码">我喜欢的代码</a></li>          
+        <li><a href="#more">更多信息</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+
+    <div class=grid_10>
+    <h3 id="简单说明" class=grid_10>个人信息:</h3>    
+    <ul class=grid_10>
+      <li><i class="fa fa-tags" aria-hidden="true"></i>姓名：        郑鸿艳 </li>
+      <li><i class="fa fa-tags" aria-hidden="true"></i>出生年月：    1998-2</li>
+      <li><i class="fa fa-tags" aria-hidden="true"></i>学校：        杭州电子科技大学</li>
+      <li><i class="fa fa-tags" aria-hidden="true"></i>专业：        软件工程</li>
+      <li><i class="fa fa-tags" aria-hidden="true"></i>邮箱:         1575389379@qq.com</li>
+    </ul>
+    </div>
+
+    <div class="grid_6">
+    <img src="http://img.blog.csdn.net/20170315140739004?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcWhjYWxhbA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="西瓜" class=grid_6>
+    </div>
+    
+    <div class="clear"></div>
+
+    <hr>
+    <h3 id="成长经历">成长经历</h3>
+
+    <table cellspacing="0" cellpadding="10" >
+        <tr>
+          <th>年份</th>
+          <th align="center">事件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1998</td>
+          <td align="center">出生</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td align="center">入学到牧屿小学</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td align="center">入学泽国四中</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td align="center">初次接触vb</td>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td align="center">学习c语言，c#语言，html语言等</td>
+        </tr>
+      </tbody>
+    </table>
+  <hr>
+  <h3 id="我喜欢的代码">我喜欢的代码：</h3>
+
+  <pre>
+    <code>namespace 属性
+{
+class Program
+{
+    static void Main(string[] args)
+    {
+        Person p1 = new Person();
+        p1.Age = 30;
+        Console.WriteLine("年龄是{0}", p1.Age);
+        Console.ReadKey();
+    }
+}
+class Person
+{
+    private int age; //这是一个字段
+    public int Age  //这是一个public属性，Age本身不存储任何值
+    {
+        set //赋值
+        {
+            if (value &lt; 0)
+            {
+                return;    //通过属性控制非法值
+            }
+            age = value; //value表示用户赋过来的值，age不能换成Age，会陷入死循环
+        }
+        get //取值
+        {
+            return age;  
+        }
+      }
+   }
+}
+    </code>
+  </pre>
+
+  <h3 id="more">联系方式</h3>
+    <div class=grid_8><ul>
+      <li>手机：        13221605683 </li>
+      <li>QQ：    1575389379</li>
+      <li>邮箱:         1575389379@qq.com</li>
+    </ul></div>
+
+<div class="clear"></div>
+<div class=grid_8><a href="http://blog.csdn.net/qhcalal">点此访问我的博客</a></div>
+</div></body>
+</html>
