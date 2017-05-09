@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+		<LINK REL=STYLESHEET HREF="mainstyle.css"> 
+	</head>
+	<body id=textbottom>
+		<h1>这是一张调查问卷</h1>
+		<button type="button" onclick="alert('你好!')">打个招呼!</button>
+	<form action="问卷调查.php" method="get" name="input">
+		<fieldset>
+		<legend>请在下方填上你的个人信息</legend>
+		身高:<br>
+		<input type="text" name="身高">
+		<br>
+		姓名:<br>
+		<input type="text" name="姓名">  <!--没有name=""则不能提交-->
+		<br>
+		年龄:<br>
+		<input type="text" name="年龄">
+		<br>
+		爱好:<br>
+		<input type="text" name="爱好">
+		<input type="reset" value="重置">
+		<input type="submit" value="submit">
+	</form>
+	<br><br>
+	<form>
+		你的性别：<br>
+		<input type="radio" name="sex" value="male" checked>男
+		<br>
+		<input type="radio" name="sex" value="female">女
+		</fieldset>
+	</form> 
+	<br>
+	<form>
+		<fieldset>
+		<legend>密码</legend>
+		Password: <input type="password" name="pwd">
+		</fieldset>
+	</form> 
+	<br>
+	<form>
+		<fieldset>
+		<legend>我有。。。</legend>
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car">I have a car
+		</fieldset>
+	</form> 
+	<br>
+	<form>
+		<fieldset>
+		<form action="">
+		<select name="选项">
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C" selected>C</option>
+			<option value="D">D</option>
+		</select>
+		</fieldset>
+	</form>
+	<br>
+	<textarea rows="10" cols="30">
+		你对该网站有什么意见或建议？
+	</textarea>
+	<br>
+	<button type="button" onclick="alert('谢谢你的合作！')">提交给站长</button>
+	</body>
+</html>

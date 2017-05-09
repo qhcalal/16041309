@@ -1,0 +1,184 @@
+@import url(font-awesome.min.css);
+
+nav li
+{
+  float:left;
+  margin:0 30px;
+  text-decoration: none;
+}
+
+body {background-image: url("http://img.my.csdn.net/uploads/201705/04/1493906572_7151.png");}
+
+nav ul
+{
+    margin: 0 200px;
+}
+
+nav
+{
+    background: rgb(150, 185, 125);
+    width: 100%;
+}
+
+.pos_fixed
+{
+  position:fixed;
+  top:0px;
+  left:0;
+  height: 28px;
+}
+
+
+nav a:link{color:white;text-decoration: none;}
+nav a:hover{background: white;color:black;text-decoration: none;}
+
+table,li,p,div{
+  font-size:110%;
+  font-family:"Microsoft YaHei", "微软雅黑", sans-serif;
+  color:#606060;
+  list-style: none;
+}
+
+li{
+  margin-top: 16px;
+  position: relative;
+}
+
+a:link   {color: #3399FF;} 
+a:hover  {color: #CC0066;}
+a:active {color: #888888;}
+
+a{
+  font-size: 100%;
+  text-decoration: none;
+}
+
+img{
+  padding-top: 150px;
+  opacity: 1;
+}
+
+#homepageimg{
+  padding-top: 50px;
+  margin-left:135px;
+}
+
+#imgnotop{
+  padding-top: 0px;
+}
+
+
+#footer{
+  margin-top: 40px;
+  height: 280px;
+  background-color:#F0F0F0;
+  opacity:0.8;
+}
+
+#top{
+  width: 100%;
+  height: 60px;
+  position:absolute;
+  top:28px;
+  left:0;
+  background-color: #FFF;
+}
+
+#textbottom{
+  background-color:#F0F0F0;
+  z-index: -9;
+}
+
+#简单说明{
+  text-align:left;
+  padding-left: 40px;
+}
+
+h1{
+  text-align: center;
+  padding-top: 1em;
+  color: #333333;
+  font-size: 250%;
+  font-family:"Microsoft YaHei"; 
+}
+
+h3 {
+  font-size:200%;
+  text-align:center;
+  color:#888888;
+  line-height:1.35;
+  font-family:"Microsoft YaHei";  /*--字体标准或倾斜等*/
+  margin:1.5em 0 0.8em;
+}
+
+
+h6 {
+  font-weight:bold;
+  font-size:100%;
+  letter-spacing:0.1em;
+  margin:1.5em 0 0.8em;
+}
+
+
+h2 {
+  margin-top:2em;
+  font-size: 2em
+}
+
+
+ul {
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+li {
+    position: relative;
+    font-size: 120%;
+    margin-top: 30px;
+}
+
+.icon::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url(http://primominuto.altervista.org/articoli/17/imgs/sprite_image.png);
+    background-repeat: no-repeat;
+    margin: 0 2em 2em 0;
+}
+
+.square::before {
+    background-position: 0 0;
+}
+
+.triangle::before {
+    background-position: -92px 0;
+}
+
+.star::before {
+    background-position: -184px 0;
+}
+
+.circle::before {
+    background-position: 0 -86px;
+}
+
+.pentagon::before {
+    background-position: -93px -86px;
+}
+
+.diamond::before {
+    background-position: -184px -86px;
+}
+
+code {font-family:courier, monospace;}
+p > code {padding:0.25em; background:white;}
+pre {text-align:left; font-size:100%;}
+hr {height:0; color:#F08080; border:1px solid #eee; margin:2em 0 1em;}
+
+/*@media (max-height:800px) {
+  div.container {font-size:50%;}
+  img {max-height:50% !important; width:auto !important; float:none; !important;}
+}*/
