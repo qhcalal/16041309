@@ -16,7 +16,7 @@ nav ul
 
 nav
 {
-    background: rgb(150, 185, 125);
+    background: #CC0066;
     width: 100%;
 }
 
@@ -35,7 +35,7 @@ nav a:hover{background: white;color:black;text-decoration: none;}
 table,li,p,div{
   font-size:110%;
   font-family:"Microsoft YaHei", "微软雅黑", sans-serif;
-  color:#606060;
+  color: #888888;
   list-style: none;
 }
 
@@ -97,7 +97,7 @@ img{
 h1{
   text-align: center;
   padding-top: 1em;
-  color: #333333;
+  color: #888888;
   font-size: 250%;
   font-family:"Microsoft YaHei"; 
 }
@@ -134,7 +134,7 @@ ul {
 li {
     position: relative;
     font-size: 120%;
-    margin-top: 30px;
+    margin-top: 30px;、
 }
 
 .icon::before {

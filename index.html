@@ -3,8 +3,17 @@
 	<head>
 		<meta charset="utf-8">
     	<title>我的主页</title>
-    	<link rel="stylesheet" type="text/css" media="screen" href="960.css">  
-    	<link rel="stylesheet" type="text/css" media="screen" href="mainstyle.css">
+        <!--[if lte IE 8]>  
+            <link rel="stylesheet" type="text/css" media="screen" href="960.css">  
+            <link rel="stylesheet" type="text/css" media="screen" href="mainstyle.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" type="text/css" media="screen" href="960.css">  
+            <link rel="stylesheet" type="text/css" media="screen" href="mainstyle.css">
+        <!--<![endif]-->
+
+        
+    	
         <style type="text/css">
             iframe {
                 margin: 0 auto;
@@ -20,15 +29,12 @@ border: none;
 	</head>
 	<body>
 	<div class=container_12>
-		<div id=top>
-			<img src="http://img.my.csdn.net/uploads/201705/04/1493906669_6739.png" id=imgnotop height="60px">
-		</div>
 
 		<nav class="pos_fixed">
       		<ul>     
       			<li>导航栏</li>
         		<li><a href="SelfIntroduction.html">关于站长</a></li>
-        		<li><a href="sheet.html">一张表单</a></li>
+        		<li><a href="sheet.html">表单</a></li>
       		</ul>	
     	</nav>
     	<h1>WELCOME TO MY HOME PAGE!</h1>
@@ -57,7 +63,7 @@ border: none;
                 <td>qhc</td>
             </tr>
             <tr>
-                <td><a href="http://blog.csdn.net/qhcalal/article/details/62221023">wordpress的安装</a></td>
+                <td><a href="blog.html">wordpress的安装</a></td>
                 <td>13:30</td>
                 <td>2017-4-10</td>
                 <td>qhc</td>
@@ -79,7 +85,7 @@ border: none;
 
     	<div class=grid_12 id=footer>
 			<ul>
-		<li class="icon square"><a href="列表页.html">查看历史文章</a></li>
+		<li class="icon square"><a href="liebiao.html">查看历史文章</a></li>
 		<li class="icon triangle"><a href="SelfIntroduction.html">关于我</a></li>
 		<li class="icon star"><a href="sheet.html">意见与建议</a></li>
 		<li class="icon circle">网站证书</li>
