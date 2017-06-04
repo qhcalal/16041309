@@ -2,12 +2,14 @@
 
 ------
 
-网站主要由四个页面组成，下面附上他们的url
+网站主要由五个基本页面组成，下面附上他们的url
 
 > * 主页    https://qhcalal.github.io/qhc/
-> * 详细页（个人简介）https://qhcalal.github.io/qhc/SelfIntroduction.html
-> * 列表页（历史消息）https://qhcalal.github.io/qhc/%E5%88%97%E8%A1%A8%E9%A1%B5.html
+> * 详细页https://qhcalal.github.io/qhc/blog.html
+> * 列表页（历史消息）https://qhcalal.github.io/qhc/liebiao.html
 > * 表单页（调查问卷）https://qhcalal.github.io/qhc/sheet.html
+> * 个人介绍页    https://qhcalal.github.io/qhc/SelfIntroduction.html
+
 
 ---
 ##策划思路
@@ -30,7 +32,7 @@
 ## 主页（index.html）
 
 
-主页包含导航栏，轮播图，表格，雪碧图。
+主页包含导航栏，轮播图（在三个技术难点中会提到），表格，雪碧图。
 
 1.作用
 
@@ -70,17 +72,7 @@
 ```
 点击关于站长，你可以看到我的个人简介（详细页），点击一张表单，你可以看到一张调查问卷（表单页）。
 
-4.轮播图
-
-轮播图的图片均来自csdn的个人相册，以防被删。
-具体的代码在 practise.html，使用了``<iframe>``标签创建包含该轮播图的内联框架
-```
-<div class="grid_12" id="frame" >
-    <iframe src="practice.html" scrolling="no"></iframe>
-</div>
-```
-
-5.雪碧图
+4.雪碧图
 ```
 <div class=grid_12 id=footer>
 	<ul>
@@ -162,11 +154,30 @@ a{
 ##开发过程中的三个技术难点
 ---
 ###提交代码到github
-    相关背景知识：git软件使用
+    相关背景知识：
+    git软件使用
+    git clone,git add -A,git commit -a -m,git stasus,git push等
     遇到的困难:
     鼠标右键菜单下的git bash莫名消失； 
     git克隆出现ssl认证问题 ；
-    生成git   page后网页不能打开
+    生成git   page后网页不能打开；
+    warning: redirecting to https://github.com/qhcalal/qhc/   Everything up-to-date
+
+**代码**
+```
+ZJTL9050@1-233-37 MINGW64 /
+$ cd f://web/gitcode/qhc
+
+ZJTL9050@1-233-37 MINGW64 /f/web/gitcode/qhc (master)
+$ git add -A
+
+ZJTL9050@1-233-37 MINGW64 /f/web/gitcode/qhc (master)
+$ git commit -a -m"new"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+```
 **解决方案：**
     **1.手动添加Git bash 到鼠标右键** 
     步骤：
@@ -176,12 +187,15 @@ a{
     4、在[shell]下右键-新建项[open in Git],其值为“Git Bash Here",此为右键菜单显示名称。
     5、在[shell]下右键-新建-字符串值[Icon],双击编辑，其值为“D:\...\Git\mingw64\share\git\git-for-windows.ico”。此为菜单加图标。
     6、在[open in git]下右键-新建-项[command],其值为 "D:\Program Files\Git\git-bash.exe"
+    7、也可以直接使用cd命令
 
 **2.证书错误**
 执行代码```git config --global http.sslVerify false```即可
 
 **3.网页404错误**
 修改主页文件名为 index.html ，并重新提交。
+**4.执行commit时为忘了添加相关信息**
+重新执行 git commit -a -m "example"
 
 
 ---
@@ -189,13 +203,21 @@ a{
 ###wordpress安装
     相关背景知识：xampp的安装和使用。
     遇到的困难：无法连接数据库，无法上传。
- 具体参照我的博文http://blog.csdn.net/qhcalal/article/details/62221023
+ 具体参照我的博文https://qhcalal.github.io/qhc/blog.html
 
 ----
 ###第三个技术难点(轮播图)
     相关知识背景：jquery，JavaScript
     遇到的困难：
     轮播的顺序有误
+    gitpage上不能正常轮播
+    
+具体的代码在 practise.html，使用了``<iframe>``标签创建包含该轮播图的内联框架
+```
+<div class="grid_12" id="frame" >
+    <iframe src="practice.html" scrolling="no"></iframe>
+</div>
+```
     
 解决方案：1.重新调整图片顺序
 ```
@@ -209,7 +231,9 @@ a{
 ```
 三张图片，按照3，1，2，3，1的顺序排列。
 
-2.
+2.https安全页面中加载不安全的图像
+![图片无法显示](http://img.my.csdn.net/uploads/201706/01/1496307129_4957.png)
+
 
 
 ----
