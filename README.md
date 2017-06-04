@@ -24,8 +24,15 @@
 ---
 ##技术指标
 1.使用了html5，css3。
-2.工具。sublime，用于编辑html；markdown，用于编辑readme文档；github网站，用于提交各网页；firebug，调试。
-3.浏览器。火狐
+2.工具。
+
+| 工具       | 作用     |
+| --------   | -----:   |
+| sublime   |用于编辑html    |
+| markdown  |用于编辑readme文档   |
+| github网站  |用于提交各网页  |
+|firebug    |调试代码  |
+3.浏览器。兼容ie8及以上浏览器及各主流浏览器。
 
 
 ------
@@ -61,6 +68,28 @@
 
 3.导航栏
 
+最左端的时间使用了JavaScript实现，关键代码如下
+```
+<script>
+                function startTime(){
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                t=setTimeout(function(){startTime()},500);
+                }
+                function checkTime(i){
+                if (i<10){
+                        i="0" + i;
+                        }
+                return i;
+                }
+        </script>
+```
+
 涉及到了绝对定位
 ```
 {
@@ -88,7 +117,7 @@
 
 
 ------
-##详细页（SelfIntroduction.html）
+##介绍页（SelfIntroduction.html）
 
 1.作用
 **该页是我个人简介，帮助用户了解站长。**
@@ -158,10 +187,10 @@ a{
     git软件使用
     git clone,git add -A,git commit -a -m,git stasus,git push等
     遇到的困难:
-    鼠标右键菜单下的git bash莫名消失； 
-    git克隆出现ssl认证问题 ；
-    生成git   page后网页不能打开；
-    warning: redirecting to https://github.com/qhcalal/qhc/   Everything up-to-date
+    1.鼠标右键菜单下的git bash莫名消失； 
+    2.git克隆出现ssl认证问题 ；
+    3.生成git   page后网页不能打开；
+    4.warning: redirecting to https://github.com/qhcalal/qhc/   Everything up-to-date
 
 **代码**
 ```
@@ -233,6 +262,7 @@ nothing to commit, working tree clean
 
 2.https安全页面中加载不安全的图像
 ![图片无法显示](http://img.my.csdn.net/uploads/201706/01/1496307129_4957.png)
+解决方案：修改iframe框架链接地址的http为https。
 
 
 
